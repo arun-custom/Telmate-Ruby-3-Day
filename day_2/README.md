@@ -330,6 +330,7 @@ person.greeting # => "Hello Dennis"
 ```ruby
 class Bicycle  
     attr_reader :gears, :wheels, :seats  
+    
     def initialize(gears = 1)  
         @wheels = 2  
         @seats = 1  
@@ -353,4 +354,78 @@ b = Bicycle.new
 puts "Gears: " + b.gears.to_s
 puts "Wheels: " + b.wheels.to_s  
 puts "Seats: " + b.seats.to_s
+```
+
+##Inheritance Lab
+- Now that you've seen how inheritance works, let's test it out in the wild.
+- We will practice a series of array exercises while using methods that pull from classes within modules.
+- Here are the steps you will need to follow:
+	- Step 1: Create a module called "Helpers" and a class inside that module called "ArrayHelpers".
+	- Step 2: Use this class to create generic methods that will perform array operations to accomplish the below problems.
+	- Step 3: Create a class outside of this module that inherits from your ArrayHelpers class that will call upon your helper methods to address the below problems.
+
+#####1. Find the last name in the following array:
+
+```ruby
+[
+    'Moe', 
+    'Larry', 
+    'Curly',
+    'Jane',
+    'Emma',
+    'Elizabeth',
+    'Elinor',
+    'Mary',
+    'Darcy',
+    'Grey',
+    'Lydia',
+    'Harriet'
+]
+```
+
+#####2. Add your name to the end of the friends and add another name to beginning. Change the Elizabeth to Liz.
+
+#####3. Sort the list of friends above.
+
+#####4. Given a list of ages, find the median age:
+
+```ruby
+[83, 53, 37, 29, 60, 30, 66, 19, 59, 41, 9, 64, 19, 80, 24, 53, 70, 1, 53, 40, 92, 4, 71, 65, 8, 2, 51, 80, 94, 37, 80, 64, 19, 6, 14, 32]
+```
+
+#####5. There are a list of names in a string, below. How could we sort them? Hint: use string and array methods.
+
+```ruby
+"Moe,Larry,Curly,Jane,Emma,Elizabeth,Elinor,Mary,Darcy,Grey,Lydia,Harriet"
+```
+
+#####6. List all the friends above in reverse alphabetical order.
+
+#####7. Combine the two lists below and sort them:
+
+```ruby
+my_friends = [
+      'Rickon',
+      'Meera',
+      'Hodor',
+      'Jojen',
+      'Osha',
+      'Rickard',
+      'Maester',
+      'Rodrik',
+      'Jory',
+      'Septa',
+      'Jon'
+]
+
+your_friends = [
+      'Bilbo',
+      'Boromir',
+      'Elrond',
+      'Faramir',
+      'Frodo',
+      'Gandalf',
+      'Legolas',
+      'Pippin'
+]
 ```
