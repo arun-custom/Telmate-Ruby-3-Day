@@ -361,7 +361,7 @@ puts "Seats: " + b.seats.to_s
 - We will practice a series of array exercises while using methods that pull from classes within modules.
 - Here are the steps you will need to follow:
 	- Step 1: Create a module called "Helpers" and a class inside that module called "ArrayHelpers".
-	- Step 2: Use this class to create generic methods that will perform array operations to accomplish the below problems.
+	- Step 2: Use this class to create generic methods that will perform operations to accomplish the below problems.
 	- Step 3: Create a class outside of this module that inherits from your ArrayHelpers class that will call upon your helper methods to address the below problems.
 
 #####1. Find the last name in the following array:
