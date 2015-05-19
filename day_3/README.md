@@ -61,3 +61,56 @@ json_response = JSON.parse(response.body)
 - Step 1: Make a POST request out to `http://daretodiscover.herokuapp.com/wines` with wine data of your choice. Pay attention to what the keys should be called. This method should be inside of your class you created in part 1.
 - Step 2: Call the method you created in part 1 to pull all of the wine records after the post request is finished.
 - Bonus: Refactor the GET and POST requests using HTTParty into your own modules.
+
+##Procs
+- Procs, or procedures are Ruby objects that act much like a block.
+- Procs allow you to define processes in block format.
+- Let's see how we can set up a Proc:
+
+```ruby
+p = Proc.new { |x| puts x * 2 }
+```
+
+Or
+
+```ruby
+p = Proc.new do |x|
+	puts x * 2
+end
+```
+
+To call it:
+
+```ruby
+p.call(2)
+```
+
+It will ignore any additional arguments:
+
+```ruby
+p.call(2, 3, 4)
+```
+
+##Lambdas
+- Lambdas are similar to Procs in the way they are set up.
+- Lambdas in contrast to Procs care about the number of arguments passed to them.
+- They also differ in that they are not objects, and are not instantiated by `.new`.
+- Let's see how we can use a Lambda:
+
+```ruby
+l = lambda { |x| puts x * 2 }
+```
+
+Or
+
+```ruby
+l = lambda do |x|
+	puts x * 2
+end
+```
+
+To call it:
+
+```ruby
+l.call(2)
+```
