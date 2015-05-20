@@ -25,3 +25,4 @@
 - Procs
 - Lambdas
 - Inheritance lab
+- Testing with RSpec
