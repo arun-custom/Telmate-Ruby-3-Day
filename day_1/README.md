@@ -349,7 +349,7 @@ message = gets.chomp
 - We will create a simple string conversion tool that take in a string and alters it using our string class methods.
 - First, write one `gets` statement that will take a string from our user.
 - Create a class called `ConvertString` that will wrap our methods.
-- Create an initializer that will set the given string to a class variable.
+- Create an initializer that will set the given string to an instance variable.
 - Create 4 different methods that will apply 4 string class methods to the inputted string. You can reference them [here](http://www.ruby-doc.org/core-2.1.4/String.html).
 - Output the resulting string to the console using `puts`.
 - Instantiate the class using each of these methods.
@@ -358,7 +358,7 @@ message = gets.chomp
 - Let's create a simple calculator using the Ruby Math module.
 - First, write two `gets` statements that will take 2 numbers from our user.
 - Create a class called `Calculator` that will wrap all of our methods.
-- Create an `initializer` method that takes in the 2 numbers and sets them as class variables.
+- Create an `initializer` method that takes in the 2 numbers and sets them as instance variables.
 - Write at least 4 methods that perform different math operations and output the result using `puts`. You can reference them [here](http://www.ruby-doc.org/core-2.1.4/Math.html).
 - Instantiate your class using each of these 4 methods.
 - Bonus: As a bonus you can create a simple `if else` statement that will choose which method to pick based on a third `gets` input. We will talk about this in the afternoon so you will have to look this up.
