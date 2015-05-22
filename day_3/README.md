@@ -114,3 +114,25 @@ To call it:
 ```ruby
 l.call(2)
 ```
+
+##Introduction to RSpec
+- RSpec is a BDD testing library that helps you automate tests.
+- It uses the "expect" syntax, which allows you to create output expectations and check for them.
+- In order to use RSpec you need to install the gem:
+
+```ruby
+gem install rspec
+```
+
+- Tests are broken down into suites, specs, and assertions.
+- Let's have a look at a simple example:
+
+```ruby
+describe "A library of functions" do
+	it "Should return true" do
+		message = true
+		
+		expect(message).to eq(true)
+	end
+end
+```

@@ -20,7 +20,7 @@
 - Attributes
 - Inheritance
 
-###Day 3
+###[Day 3](day_3/)
 - HTTP Requests
 - Procs
 - Lambdas
