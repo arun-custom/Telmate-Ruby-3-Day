@@ -136,3 +136,15 @@ describe "A library of functions" do
 	end
 end
 ```
+
+- When you're ready to run the test, you will type this command:
+
+```
+rspec filename.rb --format documentation
+```
+
+- You can also create multiple tests inside of a folder and have RSpec run all of them at the same time. Let's say we have a few tests inside of a "spec" folder:
+
+```
+rspec spec --format documentation
+```
